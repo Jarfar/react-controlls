@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import _ from 'lodash';
-import Header from '../header';
 
 
 class Block extends Component {
@@ -111,7 +110,6 @@ class Block extends Component {
     render() {
         return (
             <main>
-                <Header/>
                 <div id="left">
                     LOL
                 </div>
