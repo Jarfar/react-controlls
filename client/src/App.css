@@ -10,21 +10,23 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 #left {
+    z-index: 1;
+    width: 50vw;
     color: black;
-    width: 50%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #right {
+    z-index: 1;
     color: white;
-    width: 50%;
+    width: 50vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -34,6 +36,14 @@ main{
 
 #right div{
     transition: 1s;
+}
+
+.three{
+    position: relative;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .first {
@@ -52,10 +62,3 @@ main{
     background-color: rgb(249, 157, 212);
 }
 
-nav{
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-}

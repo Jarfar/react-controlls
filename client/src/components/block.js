@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import _ from 'lodash';
+import Cube from './cube';
 
 
 class Block extends Component {
@@ -113,6 +114,7 @@ class Block extends Component {
                 <div id="left">
                     LOL
                 </div>
+                <Cube qcolor={this.props.qcolor}/>
                 <div id="right" className={this.props.className}>
                     <div>
                     {this.props.text}
